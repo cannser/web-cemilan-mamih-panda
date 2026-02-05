@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Checkout - Mamih Panda</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container navbar">
+            <a href="index.html" class="logo" style="display: flex; align-items: center; gap: 15px; text-decoration: none;">
+                <img src="assets/logo1.png" alt="Logo Cemilan Mamih Panda" style="height: 100px;">
+                <h1 style="font-size: 24px; margin: 0; color: #8e44ad; font-family: sans-serif;">Cemilan Mamih Panda</h1>
+            </a>
+        </div>
+    </header>
+
+    <div class="container">
+        <form onsubmit="handleCheckout(event)">
+            
+            <div class="two-column-layout">
+                
+                <div class="col-main">
+                    <div class="card-box">
+                        <h3 style="margin-bottom:20px;">Detail Tagihan</h3>
+                        
+                        <div class="form-group">
+                            <label>Nama Lengkap</label>
+                            <input type="text" id="cust-name" required placeholder="Nama Anda">
+                        </div>
+
+                        <div style="display:flex; gap:10px;">
+                            <div class="form-group" style="flex:1">
+                                <label>Email</label>
+                                <input type="email" required placeholder="email@contoh.com">
+                            </div>
+                            <div class="form-group" style="flex:1">
+                                <label>Telepon</label>
+                                <input type="tel" required placeholder="0812xxxx">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>Provinsi</label>
+                            <select><option>Jawa Barat</option><option>Jawa Tengah</option><option>DKI Jakarta</option></select>
+                        </div>
+
+                        <div style="display:flex; gap:10px;">
+                            <div class="form-group" style="flex:1">
+                                <label>Kabupaten</label>
+                                <input type="text" placeholder="Masukkan Kota">
+                            </div>
+                            <div class="form-group" style="flex:1">
+                                <label>Kecamatan</label>
+                                <input type="text" placeholder="Masukkan Kecamatan">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Alamat Jalan</label>
+                            <textarea rows="3" placeholder="Jl. Contoh No. 123"></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="checkbox" id="diff-addr">
+                            <label for="diff-addr" style="display:inline;">Kirim ke alamat yang berbeda?</label>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Catatan Pesanan</label>
+                            <textarea placeholder="Contoh: Jangan terlalu pedas..."></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sidebar">
+                    <div class="card-box">
+                        <h3>Pesanan Anda</h3>
+                        <div id="checkout-items" style="margin: 20px 0;">
+                            </div>
+                        
+                        <div class="summary-row"><span>Subtotal</span> <span id="subtotal">Rp 0</span></div>
+                        <div class="summary-row"><span>Pengiriman</span> <span>Rp 10.000</span></div>
+                        <div class="summary-row"><span>Kode Unik</span> <span id="kode-unik">0</span></div>
+                        
+                        <div class="total-row">
+                            <span>Total</span> <span id="grand-total">Rp 0</span>
+                        </div>
+
+                        <h4 style="margin-top:20px;">Metode Pembayaran</h4>
+                        <div class="form-group">
+                            <input type="radio" name="payment" id="transfer" checked>
+                            <label for="transfer" style="display:inline;">Transfer Bank (BCA)</label><br>
+                            <input type="radio" name="payment" id="cod">
+                            <label for="cod" style="display:inline;">COD (Bayar di Tempat)</label>
+                        </div>
+
+                        <button type="submit" class="btn btn-success btn-full">Buat Pesanan</button>
+                    </div>
+                </div>
+            
+            </div> </form> </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

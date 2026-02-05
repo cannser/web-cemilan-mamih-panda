@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cemilan Mamih Panda - Home</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container navbar">
+        <a href="index.html" class="logo"style="display: flex; align-items: center; gap: 15px; text-decoration: none;">
+            <img src="assets/logo1.png" alt="Logo Cemilan Mamih Panda" style="height: 100px;">
+            <h1 style="font-size: 24px; margin: 0; color: #8e44ad; font-family: sans-serif;">Cemilan Mamih Panda</h1>
+        </a>
+        
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="#produk">Produk</a></li>
+            </ul>
+        </nav>
+        <div class="nav-icons">
+            <a href="login.html" title="Login User/Admin"><i class="fas fa-user"></i></a>
+            <a href="keranjang.html" class="cart-icon">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-badge">0</span>
+            </a>
+        </div>
+    </div>
+    </header>
+
+    <section class="hero">
+        <h1>Cemilan Mamih Panda</h1>
+        <p>Renyah, Pedas, dan Bikin Nagih!</p>
+        <a href="#produk" class="btn btn-primary" style="margin-top:20px;">Lihat Menu</a>
+    </section>
+
+    <div class="container" id="produk">
+        <h2 class="section-title">Produk </h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="basreng.png" alt="Basreng">
+                <div class="card-body">
+                    <h3>Basreng </h3>
+                    <p class="card-price">Rp 17.500 - 70.000</p>
+                    <a href="detail-produk.html?id=basreng" class="btn btn-outline btn-full">Lihat Detail</a>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="baso.png" alt="Baso Goreng">
+                <div class="card-body">
+                    <h3>Baso Goreng Bandung</h3>
+                    <p class="card-price">Rp 18.000 - 72.000</p>
+                    <a href="detail-produk.html?id=baso-goreng" class="btn btn-outline btn-full">Lihat Detail</a>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="sembring.png" alt="Sebring">
+                <div class="card-body">
+                    <h3>Sebring Kerupuk</h3>
+                    <p class="card-price">Rp 16.000 - 64.000</p>
+                    <a href="detail-produk.html?id=sebring" class="btn btn-outline btn-full">Lihat Detail</a>
+                </div>
+            </div>
+             <div class="product-card">
+                <img src="lumpia.png" alt="Lumpia">
+                <div class="card-body">
+                    <h3>Lumpia Lipat</h3>
+                    <p class="card-price">Rp 17.000 - 68.000</p>
+                    <a href="detail-produk.html?id=lumpia" class="btn btn-outline btn-full">Lihat Detail</a>
+                </div>
+            </div>
+             <div class="product-card">
+                <img src="makaroni.png" alt="Makaroni">
+                <div class="card-body">
+                    <h3>Makaroni Bantet</h3>
+                    <p class="card-price">Rp 17.500 - 72.000</p>
+                    <a href="detail-produk.html?id=makaroni" class="btn btn-outline btn-full">Lihat Detail</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Cemilan Mamih Panda. Rasanya nendang, harganya tenang.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

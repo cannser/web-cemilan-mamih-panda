@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basreng Pedas - Detail Produk</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+      <div class="container navbar">
+        <a href="index.html" class="logo"style="display: flex; align-items: center; gap: 15px; text-decoration: none;">
+            <img src="assets/logo1.png" alt="Logo Cemilan Mamih Panda" style="height: 100px;">
+            <h1 style="font-size: 24px; margin: 0; color: #8e44ad; font-family: sans-serif;">Cemilan Mamih Panda</h1>
+        </a>
+        
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="#produk">Produk</a></li>
+            </ul>
+        </nav>
+        <div class="nav-icons">
+            <a href="login.html" title="Login User/Admin"><i class="fas fa-user"></i></a>
+            <a href="keranjang.html" class="cart-icon">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-badge">0</span>
+            </a>
+        </div>
+    </div>
+    </header>
+
+   <div class="container">
+    <div class="detail-container">
+        <div class="detail-left">
+            <img id="detail-img" src="" alt="Gambar Produk" style="width:100%; border-radius:10px;">
+        </div>
+        <div class="detail-right">
+            <div class="price-range" id="detail-price">Rp 0</div>
+            <h1 id="detail-name">Memuat Produk...</h1>
+            <p id="detail-desc">Deskripsi produk sedang dimuat.</p>
+            <br>
+            
+            <div class="form-group">
+                <label>Pilih Rasa:</label>
+                <select id="rasa">
+                    <option>Original</option>
+                    <option>Pedas</option>
+                    <option>Pedas Daun Jeruk</option>
+                    <option>Balado</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Pilih Berat:</label>
+                <select id="berat">
+                    <option value="250gr">250gr</option>
+                    <option value="500gr">500gr</option>
+                    <option value="1kg">1kg</option>
+                </select>
+            </div>
+
+            <div class="qty-selector">
+                <button class="qty-btn" onclick="updateQty(-1)">-</button>
+                <span id="qty-display">1</span>
+                <button class="qty-btn" onclick="updateQty(1)">+</button>
+            </div>
+
+            <div class="action-buttons">
+                <button class="btn btn-outline" style="flex:1" onclick="addToCartFromDetail()">Tambah ke Keranjang</button>
+                <button class="btn btn-primary" style="flex:1" onclick="buyNow()">Beli Sekarang</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <footer>
+        <div class="container"><p>&copy; 2025 Cemilan Mamih Panda</p></div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
